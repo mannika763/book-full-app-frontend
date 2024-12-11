@@ -1,0 +1,48 @@
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.navbar .row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .menu div {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.no-style-link {
+    text-decoration: none; /* Removes the underline */
+    color: inherit;        /* Inherits the color from the parent element */
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .navbar .menu {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
